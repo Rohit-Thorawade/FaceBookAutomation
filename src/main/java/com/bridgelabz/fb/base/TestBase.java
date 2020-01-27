@@ -49,9 +49,12 @@ public class TestBase {
 					"/home/admin-1/eclipse-workspace/FacebookAutomation/driver/chromedriver");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
+			option.addArguments("--headless");
+			option.addArguments("--no-sandbox");
+			option.addArguments("--disable-dev-shm-usage");
 			driver = new ChromeDriver(option);
 		}
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();	
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
