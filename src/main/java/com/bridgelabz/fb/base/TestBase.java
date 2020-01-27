@@ -51,7 +51,6 @@ public class TestBase {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
 			driver = new ChromeDriver(option);
-
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

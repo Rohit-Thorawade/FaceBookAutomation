@@ -1,51 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-27T09:29:33Z" name="Facebook WebApplication" finished-at="2020-01-27T09:30:41Z" duration-ms="67964">
+  <suite started-at="2020-01-27T16:28:39 IST" name="Default suite" finished-at="2020-01-27T16:29:29 IST" duration-ms="50038">
     <groups>
     </groups>
-    <test started-at="2020-01-27T09:29:33Z" name="Facebook WebApp" finished-at="2020-01-27T09:30:41Z" duration-ms="67964">
-      <class name="com.bridgelabz.fb.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@21507a04]" started-at="2020-01-27T09:29:35Z" name="setup" finished-at="2020-01-27T09:29:39Z" duration-ms="4790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@21507a04]" started-at="2020-01-27T09:29:39Z" name="loginTest" data-provider="getTestData" finished-at="2020-01-27T09:29:53Z" duration-ms="13920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8.109555221E9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testdata@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@21507a04]" started-at="2020-01-27T09:29:53Z" name="teardown" finished-at="2020-01-27T09:29:53Z" duration-ms="152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.bridgelabz.fb.testcase.LoginPageTest -->
+    <test started-at="2020-01-27T16:28:39 IST" name="Default test" finished-at="2020-01-27T16:29:29 IST" duration-ms="50038">
       <class name="com.bridgelabz.fb.testcase.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@143640d5]" started-at="2020-01-27T09:29:53Z" name="setup" finished-at="2020-01-27T09:30:12Z" duration-ms="18506" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@1df82230]" started-at="2020-01-27T16:28:39 IST" name="setup" finished-at="2020-01-27T16:28:56 IST" duration-ms="16923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="uploadPhotoTest()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@143640d5]" started-at="2020-01-27T09:30:12Z" name="uploadPhotoTest" finished-at="2020-01-27T09:30:41Z" duration-ms="28697" status="PASS">
+        <test-method signature="uploadPhotoTest()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@1df82230]" started-at="2020-01-27T16:28:56 IST" name="uploadPhotoTest" finished-at="2020-01-27T16:29:29 IST" duration-ms="32894" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//button[@data-testid='profilePicSaveButton']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-1', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-74-generic', java.version: '11.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//button[@data-testid='profilePicSaveButton']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-1', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-74-generic', java.version: '11.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.bridgelabz.fb.pages.HomePage.uploadphoto(HomePage.java:66)
+at com.bridgelabz.fb.testcase.HomePageTest.uploadPhotoTest(HomePageTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadPhotoTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@143640d5]" started-at="2020-01-27T09:30:41Z" name="teardown" finished-at="2020-01-27T09:30:41Z" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@1df82230]" started-at="2020-01-27T16:29:29 IST" name="teardown" finished-at="2020-01-27T16:29:29 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.bridgelabz.fb.testcase.HomePageTest -->
-    </test> <!-- Facebook WebApp -->
-  </suite> <!-- Facebook WebApplication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

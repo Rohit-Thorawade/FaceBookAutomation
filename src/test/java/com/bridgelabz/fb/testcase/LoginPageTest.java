@@ -36,7 +36,6 @@ public class LoginPageTest extends TestBase{
 	public Iterator<Object[]> getTestData() {
 		ArrayList<Object[]> testData = TestUtil.getDataFromExcel();
 		return testData.iterator();
-
 	}
 	
 	@Test(dataProvider = "getTestData")
