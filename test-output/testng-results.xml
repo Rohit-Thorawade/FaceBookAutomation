@@ -2,64 +2,56 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-27T16:40:15 IST" name="Facebook WebApplication" finished-at="2020-01-27T16:41:32 IST" duration-ms="76818">
+  <suite started-at="2020-01-27T16:46:44 IST" name="Facebook WebApplication" finished-at="2020-01-27T16:47:55 IST" duration-ms="71198">
     <groups>
     </groups>
-    <test started-at="2020-01-27T16:40:15 IST" name="Facebook WebApp" finished-at="2020-01-27T16:41:32 IST" duration-ms="76818">
-      <class name="com.bridgelabz.fb.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:40:16 IST" name="setup" finished-at="2020-01-27T16:40:19 IST" duration-ms="3808" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:40:19 IST" name="loginTest" data-provider="getTestData" finished-at="2020-01-27T16:40:33 IST" duration-ms="13707" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8.109555221E9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testdata@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:40:33 IST" name="teardown" finished-at="2020-01-27T16:40:33 IST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.bridgelabz.fb.testcase.LoginPageTest -->
+    <test started-at="2020-01-27T16:46:44 IST" name="Facebook WebApp" finished-at="2020-01-27T16:47:55 IST" duration-ms="71198">
       <class name="com.bridgelabz.fb.testcase.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:40:33 IST" name="setup" finished-at="2020-01-27T16:40:53 IST" duration-ms="19791" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:47:05 IST" name="setup" finished-at="2020-01-27T16:47:17 IST" duration-ms="12447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="uploadPhotoTest()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:40:53 IST" name="uploadPhotoTest" finished-at="2020-01-27T16:41:32 IST" duration-ms="38840" status="FAIL">
+        <test-method signature="uploadPhotoTest()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:47:17 IST" name="uploadPhotoTest" finished-at="2020-01-27T16:47:55 IST" duration-ms="38064" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate an element using xpath=//a[text()='Add Photo']
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='_1vp5']"}
+  (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'admin-1', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-74-generic', java.version: '11.0.5'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.HQtY4B}, goog:chromeOptions: {debuggerAddress: localhost:42801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7bce0d4e2b171b178f6a20f7af7c8fdc
+*** Element info: {Using=xpath, value=//span[@class='_1vp5']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Add Photo']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='_1vp5']"}
+  (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'admin-1', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-74-generic', java.version: '11.0.5'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.HQtY4B}, goog:chromeOptions: {debuggerAddress: localhost:42801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7bce0d4e2b171b178f6a20f7af7c8fdc
+*** Element info: {Using=xpath, value=//span[@class='_1vp5']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy14.click(Unknown Source)
-at com.bridgelabz.fb.pages.HomePage.uploadphoto(HomePage.java:44)
+at com.bridgelabz.fb.pages.HomePage.uploadphoto(HomePage.java:42)
 at com.bridgelabz.fb.testcase.HomePageTest.uploadPhotoTest(HomePageTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -95,11 +87,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadPhotoTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:41:32 IST" name="teardown" finished-at="2020-01-27T16:41:32 IST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.HomePageTest@6a01e23]" started-at="2020-01-27T16:47:55 IST" name="teardown" finished-at="2020-01-27T16:47:55 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.bridgelabz.fb.testcase.HomePageTest -->
+      <class name="com.bridgelabz.fb.testcase.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:46:45 IST" name="setup" finished-at="2020-01-27T16:46:49 IST" duration-ms="3931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:46:49 IST" name="loginTest" data-provider="getTestData" finished-at="2020-01-27T16:47:05 IST" duration-ms="16026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.109555221E9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testdata@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@13c10b87]" started-at="2020-01-27T16:47:05 IST" name="teardown" finished-at="2020-01-27T16:47:05 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.bridgelabz.fb.testcase.LoginPageTest -->
     </test> <!-- Facebook WebApp -->
   </suite> <!-- Facebook WebApplication -->
 </testng-results>
