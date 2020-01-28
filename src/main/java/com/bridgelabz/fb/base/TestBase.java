@@ -49,7 +49,7 @@ public class TestBase {
 					"/home/admin-1/eclipse-workspace/FacebookAutomation/driver/chromedriver");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
-			option.addArguments("--headless");
+			//option.addArguments("--headless");
 			option.addArguments("--no-sandbox");
 			option.addArguments("--disable-dev-shm-usage");
 			driver = new ChromeDriver(option);
