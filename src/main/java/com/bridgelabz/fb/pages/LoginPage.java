@@ -22,6 +22,8 @@ public class LoginPage extends TestBase {
 	@FindBy(id="u_0_b")
 	WebElement loginbutton;
 	
+	
+	
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
